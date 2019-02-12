@@ -1,0 +1,17 @@
+* , body {
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  margin: 20px auto;
+  box-shadow: 2px 2px 15px gray;
+  max-width: 800px;
+  text-align: center;
+}
+
+article{
+  margin: 20px;
+  text-align: start;
+}
