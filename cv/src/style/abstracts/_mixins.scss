@@ -1,0 +1,10 @@
+@import 'variables';
+
+@mixin gradient-text($color-1, $color-2) {
+  @supports (-webkit-background-clip: text) {
+    color: transparent;
+    background-image: linear-gradient(($rotate-primary + 90deg), ($color-1), ($color-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}

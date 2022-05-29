@@ -1,0 +1,16 @@
+$rotate-primary: 21.3deg;
+$border-radius: 2rem;
+
+//colors
+$color-primary: #18ae8f;
+$color-primary-light: #3ef3cf;
+$color-primary-dark: #0f866e;
+$color-secondary: #18a9ae;
+$color-accent: #acf76f;
+
+$color-shadow: #64646456;
+
+$bg-primary: #312d3a;
+$bg-secondary: #3ef3cf;
+
+$bg-gradient: linear-gradient($rotate-primary, $color-primary, $color-secondary);
