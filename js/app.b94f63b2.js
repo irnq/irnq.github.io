@@ -267,11 +267,11 @@
       R =
         (c('99af'),
         [
-          { name: 'html', icon: './icons/html5.svg' },
-          { name: 'css', icon: './icons/css3.svg' },
-          { name: 'js', icon: './icons/js.svg' },
+          { name: 'html', icon: './icons/HTML5.svg' },
+          { name: 'css', icon: './icons/CSS3.svg' },
+          { name: 'js', icon: './icons/JS.svg' },
           { name: 'angular', icon: './icons/angular.svg' },
-          { name: 'vue', icon: './icons/vue.svg' },
+          { name: 'vue', icon: './icons/Vue.svg' },
         ]),
       H = (function (t) {
         Object(i['a'])(c, t);
