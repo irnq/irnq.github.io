@@ -2,6 +2,8 @@
   <Header />
   <Skills />
   <Portfolio />
+  <Certificates />
+  <Footer />
 </template>
 
 <script lang="ts">
@@ -9,12 +11,16 @@ import { Options, Vue } from 'vue-class-component';
 import Header from './components/Header.vue';
 import Skills from './components/Skills.vue';
 import Portfolio from './components/Portfolio.vue';
+import Certificates from './components/Certificates.vue';
+import Footer from './components/Footer.vue';
 
 @Options({
   components: {
     Header,
     Skills,
     Portfolio,
+    Certificates,
+    Footer,
   },
 })
 export default class App extends Vue {}
@@ -39,5 +45,9 @@ export default class App extends Vue {}
 
 .flex {
   display: flex;
+}
+
+.text-secondary {
+  color: $color-secondary;
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="wrapper flex">
       <img class="header__portrait" src="../assets/img/portrait-200x200.jpg" alt="portrait" />
       <div class="header__content flex">
-        <Contacts />
+        <Contacts class="header__contacts" />
         <div class="header__title-block flex">
           <h1 class="header__title">Ilia Rybakov</h1>
           <h2 class="header__title--subtitle">Front-end developer</h2>
@@ -34,12 +34,24 @@ export default class Header extends Vue {}
   background-color: $bg-primary;
   padding: 0 2rem;
   color: $color-primary;
+  position: relative;
+
+  @media only screen and (max-width: 55em) {
+    padding: 2rem 3rem;
+    height: 38rem;
+  }
+  @media only screen and (max-width: 45em) {
+    height: 45rem;
+  }
 
   &__portrait {
     border-radius: 100%;
     width: 21rem;
     height: 21rem;
     border: 0.5rem solid $color-primary;
+    @media only screen and (max-width: 30em) {
+      align-self: flex-end;
+    }
   }
 
   &__content {
@@ -47,6 +59,17 @@ export default class Header extends Vue {}
     justify-content: space-between;
     height: 21rem;
     width: 100%;
+
+    @media only screen and (max-width: 55em) {
+      position: absolute;
+      padding: 1rem 2rem;
+      top: 0;
+      left: 0;
+      height: 35rem;
+    }
+    @media only screen and (max-width: 45em) {
+      height: 40rem;
+    }
   }
 
   &__title {
@@ -57,9 +80,23 @@ export default class Header extends Vue {}
     font-weight: 700;
     margin: 0;
 
+    @media only screen and (max-width: 45em) {
+      text-align: right;
+      padding-right: 2rem;
+    }
+
     &-block {
       align-items: baseline;
       column-gap: 4rem;
+
+      @media only screen and (max-width: 55em) {
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 30em) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &--subtitle {
@@ -78,6 +115,20 @@ export default class Header extends Vue {}
       transform: rotateZ($rotate-primary) translateY(-50%);
       background: $color-primary;
       border-radius: 3px 0 3px 0;
+
+      @media only screen and (max-width: 30em) {
+        display: none;
+      }
+    }
+  }
+
+  &__contacts {
+    align-self: flex-end;
+    @media only screen and (max-width: 45em) {
+      align-self: center;
+    }
+    @media only screen and (max-width: 30em) {
+      align-self: flex-start;
     }
   }
 
@@ -85,6 +136,12 @@ export default class Header extends Vue {}
     padding-top: 3rem;
     gap: 5rem;
     align-items: center;
+
+    @media only screen and (max-width: 55em) {
+      flex-direction: column;
+      gap: 2.5rem;
+      align-items: center;
+    }
   }
 }
 </style>

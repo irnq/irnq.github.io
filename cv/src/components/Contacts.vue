@@ -39,8 +39,12 @@ export default class Contacts extends Vue {}
 .contacts {
   list-style: none;
   gap: 2.5rem;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0.5rem;
+
+  @media only screen and (max-width: 30em) {
+    flex-direction: column;
+  }
 
   &__icon {
     display: block;
